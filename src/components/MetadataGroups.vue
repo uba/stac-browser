@@ -77,6 +77,11 @@ export default {
     },
   },
   watch: {
+    // We need to run this.formatData() once at the beginning.
+    // We use the uiLanguage watcher for this and enable it through immediate: true,
+    // because this ensures that the duration.js from the locales is loaded properly.
+    // We don't set immediate: true for the data watcher,
+    // because this would cause formatting to run twice at the beginning.
     uiLanguage: {
       immediate: true,
       async handler(locale) {
@@ -91,6 +96,9 @@ export default {
         // Format the data again to update translations
         this.formattedData = this.formatData();
       },
+    },
+    data() {
+      this.formattedData = this.formatData();
     },
   },
   methods: {
