@@ -9,11 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Allow manually entering bounding boxes for search
-- Allow negating CQL2 filters (globally and per filter)
-- Support CQL2 Advanced Comparison Operators
-- Support CQL2 Array Functions
-- Support Sortables
+- Inputs to enter bounding boxes for search manually
+- Plugin system for widgets
+- Support for Sortables
+- CQL2 / Queryables:
+  - Allow negating CQL2 filters (globally and per filter)
+  - Support CQL2 Advanced Comparison Operators
+  - Support CQL2 Array Functions
 - PlayWright tests
 
 ### Changed
