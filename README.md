@@ -235,6 +235,15 @@ STAC Browser supports some non-standardized extensions to the STAC specification
 
 You can use the Docker to work with STAC Browser. Please read [Docker documentation](docs/docker.md) for more details.
 
+## Testing
+To run the testing suite locally:
+
+```bash
+npm test
+```
+
+For more information on testing, see [CONTRIBUTING.md](CONTRIBUTING.md#tests)
+
 ## Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to STAC Browser.
